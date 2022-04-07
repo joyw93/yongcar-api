@@ -14,3 +14,7 @@ def predict():
      price = predict_price(model, age, odo, fuel, color)
      
      return str(price)
+
+@bp.route('/')
+def hello_world():
+     return 'hello world'
