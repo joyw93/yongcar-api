@@ -12,9 +12,8 @@ def predict():
      color = args['color']
      fuel = args['fuel']
      price = predict_price(model, age, odo, fuel, color)
-     
      return str(price)
 
 @bp.route('/')
 def hello_flask():
-     return 'hello flask'
+     return 'hello flask!'
