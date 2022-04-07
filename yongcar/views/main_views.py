@@ -12,6 +12,7 @@ def predict():
      color = args['color']
      fuel = args['fuel']
      price = predict_price(model, age, odo, fuel, color)
+     return 1
      return str(price)
 
 @bp.route('/')
