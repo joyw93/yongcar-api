@@ -16,5 +16,5 @@ def predict():
      return str(price)
 
 @bp.route('/')
-def hello_world():
-     return 'hello world'
+def hello_flask():
+     return 'hello flask'
