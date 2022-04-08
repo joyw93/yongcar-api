@@ -11,11 +11,9 @@ def predict():
      odo = int(args['odo'].replace(',', ''))
      color = args['color']
      fuel = args['fuel']
-     print(model)
-     print(age)
-     print(odo)
-     print(color)
-     print(fuel)
      price = predict_price(model, age, odo, fuel, color)
-     
      return str(price)
+
+@bp.route('/')
+def hello_flask():
+     return 'hello flask!'
