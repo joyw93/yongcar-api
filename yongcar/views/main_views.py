@@ -7,7 +7,7 @@ bp = Blueprint('main', __name__, url_prefix='/')
 def predict():
      args = request.json
      model = args['model']
-     age = int(args['age'].replace('년',''))
+     age = args['age'].replace('년','')
      odo = int(args['odo'].replace(',', ''))
      color = args['color']
      fuel = args['fuel']
